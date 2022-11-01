@@ -1,0 +1,359 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
+
+/* Custom properties for LP colors */
+:root {
+    --LPwhite: white;
+    --LPred: rgb(237, 27, 36);
+    --LPblack: black;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--LPblack);
+}
+
+/* Header CSS */
+
+header {
+    width: 100%;
+    max-height: 90px;
+    background: transparent;
+    position: fixed;
+    padding: 10px 30px;
+    z-index: 9999;
+    transition: background 250ms ease-in;
+}
+
+/* this is the css for the nav bar after scrolling past the first section */
+.nav-scrolled {
+    background-color: var(--LPblack);
+    box-shadow: 0 3px 20px rgba(var(--LPblack), 0.2);
+}
+
+nav {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 200px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+
+.nav-links ul li a {
+    color: var(--LPwhite);
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.nav-links ul li a:hover {
+    color: var(--LPred);
+}
+
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 1200px) {
+    .nav-links ul li a {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 700px) {
+    html, body {
+      overflow-x: hidden;
+    }
+    header {
+        background-color: var(--LPblack);
+    }
+    .nav-links ul li {
+      display: block;
+    }
+    .nav-links{
+      position: fixed;
+      background: grey;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+    nav .fa {
+      display: block;
+      color: var(--LPwhite);
+      margin: 20px;
+      margin-right: 1rem;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .nav-links ul{
+      padding: 30px;
+    }
+}
+
+
+/* Welcome Page CSS */
+.welcome-page {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/rock-band1.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+}
+
+
+.welcome-text {
+    margin-top: 200px;
+    display: inline;
+    text-align: left;
+    width: 65%;
+    float: left;
+}
+
+.medium-white {
+    color: var(--LPwhite);
+    font-size: clamp(20px, 3vw, 40px);
+}
+
+.big-red {
+    color: var(--LPred);
+    font-size: clamp(70px, 10vw, 300px);
+    font-weight: 900;
+    line-height: 0.75;
+}
+
+.signup-form {
+    margin-top: 200px;
+    width: 33%;
+    background-color: var(--LPwhite);
+    min-height: 200px;
+    float: right;
+}
+.signup-form h2 {
+    color: var(--LPred);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.signup-form input, .signup-form textarea {
+    width: 100%;
+    font-size: 14px;
+    padding: 15px;
+    /* margin-bottom: 5px; */
+    border: none;
+    border-bottom: 1px solid grey;
+    box-sizing: border-box;
+}
+
+.hero-btn {
+    width: 100%;
+    color: var(--LPwhite);
+    text-decoration: none;
+    border: 1px solid var(--LPred);
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: var(--LPred);
+    cursor: pointer;
+}
+
+
+
+
+@media(max-width: 900px) {
+    .content {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        max-width: 1400px;
+    }
+    .welcome-text {
+        width: 100%;
+        margin: 100 auto;
+    }
+
+    .signup-form {
+        min-width: 90%;
+        max-width: 700px;
+        margin: 10 auto;
+        margin-top: 5vh;
+    }
+}
+/* Music Lessons Page CSS */
+.music-lessons-page {
+    min-height: 500px;
+    background-color: grey;
+}
+
+/* About Page CSS */
+.about-page {
+    min-height: 800px;
+    background-color: blue;
+}
+
+
+/* events page CSS */
+.events-page {
+    min-height: 500px;
+    background-color: green;
+}
+
+/* newsletter CSS */
+.newsletter-signup {
+    min-height: 30vh;
+    background-image: url(images/rock-band3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* FAQ page CSS */
+.faq-page {
+    min-height: 80vh;
+    background-color: var(--LPblack);
+}
+
+.faq-page h2 {
+    margin-top: 100px;
+    margin-bottom: 10vh;
+    text-align: left;
+    color: var(--LPwhite);
+    font-size: clamp(15px, 6vh, 100px);
+}
+
+.faq-page li {
+    margin-bottom: 10vh;
+    /* border-bottom: 1px solid red; */
+}
+
+.question {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--LPred);
+}
+
+.answer {
+    font-size: 1.5rem;
+    color: var(--LPwhite);
+    margin-top: 10px;
+}
+
+.answer a {
+    text-decoration: none;
+    color: var(--LPred);
+    font-weight: 900;
+}
+
+/* Contact Page CSS */
+.contact-page {
+    min-height: 500px;
+    background-color: grey;
+}
+
+
+
+/* Footer CSS */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: var(--LPblack);
+}
+
+.phone-number {
+    max-width: 200px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--LPwhite);
+    padding: 10px 50px;
+    margin: 2rem;
+    background-color: var(--LPred);
+    border: 1px solid var(--LPred);
+    transition: 250ms;
+}
+
+.phone-number:hover {
+    background-color: transparent;
+    color: var(--LPred);
+}
+
+footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+  
+footer p {
+    color: grey;
+}
+
+.icons .fa {
+    color: var(--LPwhite);
+    margin: 0 15px;
+    cursor: pointer;
+    padding: 20px 0;
+    transition: 0.2s;
+}
+
+.icons .fa-brands {
+    color: var(--LPwhite);
+    margin: 0 15px;
+    cursor: pointer;
+    padding: 20px 0;
+    transition: 0.2s;
+}
+
+.icons .fa:hover {
+    color: var(--LPred);
+}
+
+.icons .fa-brands:hover {
+    color: var(--LPred);
+}

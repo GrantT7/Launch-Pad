@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Launch Pad | Rock School and Recording Studios</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a17bb294d.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+   <!-- Header Section -->
+    <header>  
+        <nav>
+            <a href="index.html"><img src="images/main-logo.png" ></a>
+            <div class='nav-links' id='navLinks'>
+                <!-- this is for the hamburger on mobile -->
+                <i class="fa fa-times" aria-hidden='true' onclick='hideMenu()'></i>
+                <ul>
+                  <li><a href="#welcomePage">HOME</a></li>
+                  <li><a href="#musicLessonsPage">MUSIC LESSONS</a></li>
+                  <li><a href="#aboutPage">ABOUT US</a></li>
+                  <li><a href="#eventsPage">EVENTS</a></li>
+                  <li><a href="#faqPage">FAQ's</a></li>
+                  <li><a href="#contactPage">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden='true' onclick='showMenu()'></i>
+        </nav>
+    </header>
+    <main>
+        <!-- Welcome Page -->
+        <section class="welcome-page home-intro" id="welcomePage">
+            <div class="content">
+                <div class="welcome-text">
+                    <h1>
+                        <span class="medium-white">WELCOME TO</span>
+                        <br>
+                        <span class="big-red">THE LAUNCH PAD</span>
+                        <br>
+                        <span class="medium-white">WHERE ARTISTS ARE EQUIPPED TO FIND THEIR VOICE</span>
+                    </h1>
+                </div>
+                <div class="signup-form">
+                    <h2>SIGN UP FOR LESSONS TODAY!</h2>
+                    <!-- to-do check that form handler works -->
+                    <form action="form-handler.php" method="post">
+                        <input type='text' name='name' placeholder='Name' required>
+                        <input type='email' name='email' placeholder='Email' required>
+                        <input type='tel' name='phone' placeholder='Phone Number' required>
+                        <input type='text' name='subject' placeholder='Subject' required>
+                        <textarea rows='8' name='message' placeholder='Enter Your Message' required></textarea>
+                        <button type='submit' class='hero-btn'>Send Message</button>
+                      </form>
+                      <!-- to-do when submit is clicked text should pop up saying it was submitted -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Lessons Page -->
+        <section class="music-lessons-page" id="musicLessonsPage">
+            <div class="content">
+                
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section class="about-page" id="aboutPage">
+
+        </section>
+
+        <!-- Events Page -->
+        <section class="events-page" id="eventsPage">
+            <div class="content">
+
+            </div>
+        </section>
+        <!-- newsletter signup, intentionally doesn't have a nav link -->
+        <section class="newsletter-signup">
+            <div class="content">
+                <h2>Sign Up For Our Newsletter!</h2>
+                <h4>Sign up to receive our monthly newsletter, as well as updates on closures and news updates</h4>
+                <!-- to-do make sure the email signup form works, where we will have to manually add the email to Sender (which is the current software we are going to use to send out HTML emails) -->
+                <form action='newsletter-signup.php' method='post'>
+                    <input type='email' name='email' placeholder='Email' required>
+                    <button type='submit' class='hero-btn'>Sign Up</button>   
+                </form>   
+            </div>
+        </section>
+
+        <!-- FAQ page -->
+        <section class="faq-page" id="faqPage">
+            <div class="content">
+                <h2>Frequently Asked <span style="color: var(--LPred)">Questions</span></h2>
+                <ul>
+                    <li>
+                        <!-- to-do update the questions as needed -->
+                        <span class="question">Do you teach adults?</span>
+                        <br><br>
+                        <span class="answer">We teach anyone. It doesn’t matter if you’re 5 years old, or 105 years old. We are standing by, ready to help.</span>
+                    </li>
+                    <li>
+                        <span class="question">What is the cost for lessons?</span>
+                        <br><br>
+                        <span class="answer">Weekly 30 minute lessons are available for a $119 monthly tuition. 60 minute lessons cost $238 per month.</span>
+                    </li>
+                    <li>
+                        <span class="question">Is the studio reserved just for students?</span>
+                        <br><br>
+                        <span class="answer">Absolutely not. The recording studio is open to the public. Give us a call to duscuss your next project!</span>
+                    </li>
+                    <li>
+                        <span class="question">Can I work at Launch Pad?</span>
+                        <br><br>
+                        <span class="answer">We love reading resumes! You can send yours to contact@launchpadindy.com.</span>
+                    </li>
+                    <li>
+                        <span class="question">Do you sell instruments?</span>
+                        <br><br>
+                        <span class="answer">We are not a music store. Our focus is entirely on instruction and recording. We have great relationships with local stores and we are more than happy to help you get connected to amazing gear and quality retail options.</span>
+                    </li>
+                    <li>
+                        <span class="question">What is Rock Band?</span>
+                        <br><br>
+                        <!-- to-do add a link to the rock band page on the word HERE -->
+                        <span class="answer">Rock band is our unique program, designed to give kids/youth the full band experience. They rehearse weekly, perform regularly, and record together in our studio. Learn more <a href="">HERE</a></span> 
+                    </li>
+                    <li>
+                        <span class="question">How much does it cost to record?</span>
+                        <br><br>
+                        <span class="answer">We have made professional recording affordable on any budget. Our studio rate is just $60 per hour. And the best part...we DO NOT charge additional fees for the engineer or for mixing and mastering by the song. You simply pay for the time.</span>
+                    </li>
+                    <li>
+                        <span class="question">What instruments / disciplines do you teach?</span>
+                        <br><br>
+                        <span class="answer">We teach guitar, bass guitar, voice, drums, piano/keyboard, audio engineering, and electronic music production.</span>
+                    </li>
+                    <li>
+                        <span class="question">Do you offer sibling discounts?</span>
+                        <br><br>
+                        <span class="answer">We do not. Our rates are so low, and our instructors work independently of one another. This makes it impossible for us to discount our lesson offerings.</span>
+                    </li>
+                    <li>
+                        <span class="question">Is this a safe place for my kids?</span>
+                        <br><br>
+                        <span class="answer">Absolutely, yes. There is nothing we take more seriously. All of our instructors are drug-free, and must pass a background check. And that's just the beginning. We seek out and recruit only staff members who are positive and encouraging people. If they don't fit that mold, we find someone else. In addition, we record video in every lesson room and display it live in our waiting area.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+         <!-- Contact Page -->
+         <!-- to-do finish the contact info and add map on google maps -->
+         <section class="contact-page" id="contactPage">
+            <div class="content">
+                
+            </div>
+            <div class="location">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a class="phone-number" href="tel:3177217775">317-721-7775</a>
+        <br><br>
+        <div class='icons'>
+            <a href='https://www.facebook.com/LaunchPadMusic/' target='_blank'><i class='fa fa-facebook'></i></a>
+            <a href='https://twitter.com/launchpad_music' target='_blank'><i class='fa fa-twitter'></i></a>
+            <a href='https://www.tiktok.com/@launchpadindy' target='_blank'><i class='fa-brands fa-tiktok'></i></a>
+            <a href='https://www.instagram.com/launchpadindy/' target='_blank'><i class='fa fa-instagram'></i></a>
+            <a href='https://www.youtube.com/user/launchpadindy' target='_blank'><i class='fa fa-youtube'></i></a>
+        </div>
+        <br>
+        <p>©2012 <strong>Launch Pad Music, LLC</strong> All rights reserved</p>
+    </footer>
+    <!-- javascript to animate the menu on mobile -->
+    <script>
+
+        var navLinks = document.getElementById('navLinks');
+    
+        function showMenu(){
+          navLinks.style.right = '0';
+        }
+    
+        function hideMenu(){
+          navLinks.style.right = '-200px'
+        }
+    
+      </script>
+      <script src="main.js"></script>
+</body>
+</html>
