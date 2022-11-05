@@ -1,5 +1,3 @@
-/* Github push test */
-
 @media (prefers-reduced-motion: no-preference) {
     * {
       scroll-behavior: smooth;
@@ -32,7 +30,7 @@ header {
     max-height: 90px;
     background: transparent;
     position: fixed;
-    padding: 10px 30px;
+    padding: 5px 30px;
     z-index: 9999;
     transition: background 250ms ease-in;
 }
@@ -235,8 +233,81 @@ nav .fa {
 }
 /* Music Lessons Page CSS */
 .music-lessons-page {
-    min-height: 500px;
-    background-color: grey;
+    min-height: 800px;
+    background-color: var(--LPblack);
+}
+
+.music-lessons-page h2 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--LPred);
+}
+
+.music-lessons-card {
+    width: 48%;
+    float: left;
+    margin-top: 20px;
+    min-height: 1050px;
+    background-color: var(--LPblack);
+    color: var(--LPwhite);
+    padding: 2rem;
+}
+
+.card-title {
+    width: 100%;
+    text-align: center;
+    color: var(--LPwhite);
+    margin-bottom: 1rem;
+}
+
+.music-lessons-card img {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.music-lessons-card a {
+    text-decoration: none;
+    color: var(--LPred);
+    font-weight: 900;
+}
+
+.rock-band-card {
+    width: 48%;
+    float: left;
+    margin-top: 20px;
+    min-height: 1050px;
+    background-color: var(--LPblack);
+    color: var(--LPwhite);
+    padding: 2rem;
+}
+
+.rock-band-card img {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.rock-band-card a {
+    text-decoration: none;
+    color: var(--LPred);
+    font-weight: 900;
+}
+
+@media(max-width: 450px) {
+    .music-lessons-card {
+        width: 100%;
+        padding: 0px;
+        min-height: 100vh;
+    } 
+    .rock-band-card {
+        width: 100%;
+        padding: 0px;
+        margin-top: 20px;
+        min-height: 100vh;
+    }
 }
 
 /* About Page CSS */
@@ -252,16 +323,71 @@ nav .fa {
     background-color: green;
 }
 
+.sk-fb-event {
+    width: 100%;
+    min-height: 500px;
+}
+
 /* newsletter CSS */
 .newsletter-signup {
     min-height: 30vh;
-    /* background-image: url(images/rock-band3.jpeg); */
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/rock-band3.jpeg);
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}
+
+.newsletter-signup h2 {
+    color: var(--LPwhite);
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.newsletter-signup h4{
+    color: var(--LPwhite);
+    /* for some reason i had to use 100% width because I couldn't make this a block level element */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.newsletter-signup form {
+    display: block;
+}
+
+.newsletter-signup input {
+    height: 2rem;
+    font-size: 16px;
+    display: inline;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.newsletter-signup button {
+    min-width: 10vw;
+    height: 2rem;
+    display: inline;
+    color: var(--LPwhite);
+    text-decoration: none;
+    border: 1px solid var(--LPred);
+    font-size: 1rem;
+    padding: 5px;
+    background-color: var(--LPred);
+    cursor: pointer;
+}
+
+@media(max-width: 400px) {
+    .newsletter-signup input {
+        width: 100%;
+    }
+
+    .newsletter-signup button {
+        width: 100%
+    } 
 }
 
 /* FAQ page CSS */
@@ -302,12 +428,12 @@ nav .fa {
     font-weight: 900;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 400px) {
    .question {
-    font-size: 2rem;
+    font-size: 1.25rem;
    } 
    .answer {
-    font-size: 1.5rem;
+    font-size: 1rem;
    }
 }
 
@@ -340,11 +466,11 @@ nav .fa {
 
 .info-piece h5{
     color: var(--LPwhite);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .info-piece p{
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .location {
@@ -357,7 +483,7 @@ nav .fa {
     .info {
         height: 450px;
         width: 100%;
-        margin: 10px auto; 
+        margin: 10px auto;
     }
 
     .location {
@@ -369,6 +495,8 @@ nav .fa {
         max-height: 450px;
         width: 100%;
     }
+
+
 }
 
 /* Footer CSS */

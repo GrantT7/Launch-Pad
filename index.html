@@ -45,7 +45,7 @@
                         <span class="medium-white">WHERE ARTISTS ARE EQUIPPED TO FIND THEIR VOICE</span>
                     </h1>
                 </div>
-                <div class="signup-form">
+                <div class="signup-form" >
                     <h2>SIGN UP FOR LESSONS TODAY!</h2>
                     <!-- to-do check that form handler works -->
                     <form action="form-handler.php" method="post">
@@ -64,7 +64,38 @@
         <!-- Music Lessons Page -->
         <section class="music-lessons-page" id="musicLessonsPage">
             <div class="content">
-                
+                <h2>Our Programs</h2>
+                <div class="music-lessons-card">
+                    <!-- to-do determine if we want to put this infor on another page -->
+                    <h3 class="card-title">Music Lessons</h3>
+                    <img src="images/lessons1.jpeg">
+                    <p>Here at the Launch Pad, we offer music lessons for all ages and skill levels.</p>
+                    <br>
+                    <p>The music lesson program at The Launch Pad is truly a cut above the standard music store experience. Everything is designed with performance in mind!</p>
+                    <br>
+                    <p>Students meet with one of our talented, dedicated instructors for 30 minutes each week, and right away we have them learning the music that inspires them. Our entire program and facility are designed to take learning music into a new dimension, that’s as collaborative as it is creative.</p>
+                    <br>
+                    <p>Once our youth students get the basics, it’s onward to our Rock Band program, where they have opportunities to rehearse, perform and record music with their peers and with the pros. The “lessons” they learn along the way? …teamwork, accountability, confidence and self-expression.</p>
+                    <br>
+                    <p>Monthly Tuition: <strong>$119.00</strong></p>
+                    <br>
+                    <p>Click <a href="#welcomePage">HERE</a> to sign up!</p>
+                </div>
+                <div class="rock-band-card">
+                    <h3 class="card-title">Rock Band</h3>
+                    <img src="images/rock-band2.jpeg">
+                    <!-- to-do determine if we want to put most of this info on another page -->
+                    <p><strong>Rock Band is where it’s at!</strong></p>
+                    <br>
+                    <p>Launch Pad students are invited to join this unique program. Rock Band students are grouped with peers and attend weekly rehearsals.</p>
+                    <br>
+                    <p>They will learn music as a group, perform live as a group, and even record in our studio.</p>
+                    <br>
+                    <p>It’s an experience of a lifetime and the students who have this amazing opportunity are
+                    developing their talents at an incredible pace!</p>
+                    <br>
+                    <p>A new session is always around the corner, so ask your instructor about joining Rock Band today! …or click <a href="">HERE</a> to find out more.</p>
+                </div>
             </div>
         </section>
 
@@ -76,7 +107,8 @@
         <!-- Events Page -->
         <section class="events-page" id="eventsPage">
             <div class="content">
-
+                <h2>Check Us Out at Our Events!</h2>
+                <div class='sk-fb-event' data-embed-id='99727'></div><script src='https://widgets.sociablekit.com/facebook-page-events/widget.js' async defer></script>
             </div>
         </section>
         <!-- newsletter signup, intentionally doesn't have a nav link -->
@@ -84,11 +116,13 @@
             <div class="content">
                 <h2>Sign Up For Our Newsletter!</h2>
                 <h4>Sign up to receive our monthly newsletter, as well as updates on closures and news updates</h4>
+         
                 <!-- to-do make sure the email signup form works, where we will have to manually add the email to Sender (which is the current software we are going to use to send out HTML emails) -->
-                <form action='newsletter-signup.php' method='post'>
-                    <input type='email' name='email' placeholder='Email' required>
-                    <button type='submit' class='hero-btn'>Sign Up</button>   
-                </form>   
+                    <form action='newsletter-signup.php' method='post'>
+                        <input type='email' name='email' placeholder='Email' required>
+                        <button type='submit' class='newsletter-btn'>Sign Up</button>   
+                    </form>   
+                
             </div>
         </section>
 
