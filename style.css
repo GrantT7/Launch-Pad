@@ -166,7 +166,7 @@ nav .fa {
 
 .big-red {
     color: var(--LPred);
-    font-size: clamp(70px, 10vw, 300px);
+    font-size: clamp(100px, 10vw, 300px);
     font-weight: 900;
     line-height: 0.75;
 }
@@ -296,7 +296,8 @@ nav .fa {
     font-weight: 900;
 }
 
-@media(max-width: 450px) {
+/* to-do determine a good width to prevent the rock band card from pushing down in a ~600px viewport */
+@media(max-width: 600px) {
     .music-lessons-card {
         width: 100%;
         padding: 0px;
@@ -320,12 +321,18 @@ nav .fa {
 /* events page CSS */
 .events-page {
     min-height: 500px;
-    background-color: green;
+    background-color: var(--LPblack);
+}
+
+.events-page h2 {
+    color: var(--LPwhite);
+    margin: 20px auto;
 }
 
 .sk-fb-event {
     width: 100%;
     min-height: 500px;
+    border: 5px solid var(--LPred);
 }
 
 /* newsletter CSS */
@@ -344,6 +351,8 @@ nav .fa {
     display: block;
     width: 100%;
     margin-bottom: 10px;
+    margin-top: 3rem;
+    
 }
 
 .newsletter-signup h4{
@@ -417,7 +426,7 @@ nav .fa {
 }
 
 .answer {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--LPwhite);
     margin-top: 10px;
 }
