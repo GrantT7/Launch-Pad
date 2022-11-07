@@ -21,6 +21,7 @@
 
 html {
     background-color: var(--LPblack);
+    color: var(--LPblack);
 }
 
 /* Header CSS */
@@ -117,6 +118,9 @@ nav .fa {
     }
     .nav-links ul{
       padding: 30px;
+    }
+    nav img {
+        width: 100px;
     }
 }
 
