@@ -166,7 +166,7 @@ nav .fa {
 
 .big-red {
     color: var(--LPred);
-    font-size: clamp(100px, 10vw, 300px);
+    font-size: clamp(70px, 10vw, 300px);
     font-weight: 900;
     line-height: 0.75;
 }
@@ -358,8 +358,8 @@ nav .fa {
 }
 
 .our-instructors-card img {
-    margin: 1rem auto;
     display: inline-block;
+    margin: 1rem auto;
     width: 35%;
     float: left;
 }
@@ -374,6 +374,24 @@ nav .fa {
 .our-instructors-info h3 {
     text-align: center;
     margin-bottom: 1rem;
+}
+
+@media(max-width: 600px) {
+    .our-story-card, .our-instructors-card {
+        width: 100%;
+    }
+    .our-story-card img {
+        max-width: 100%;
+        display: block;
+    }
+    .our-instructors-card img {
+        width: 100%;
+        display: block;
+    }
+    .our-story-info, .our-instructors-info {
+        max-width: 100%;
+        display: block;
+    }
 }
 
 
