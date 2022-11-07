@@ -120,7 +120,7 @@ nav .fa {
       padding: 30px;
     }
     nav img {
-        width: 100px;
+        width: 120px;
     }
 }
 
@@ -496,7 +496,7 @@ nav .fa {
 }
 
 .faq-page li {
-    margin-bottom: 10vh;
+    margin-bottom: 20px;
     /* border-bottom: 1px solid red; */
 }
 
@@ -557,6 +557,7 @@ nav .fa {
 .info-piece h5{
     color: var(--LPwhite);
     font-size: 1.3rem;
+    text-decoration: none;
 }
 
 .info-piece p{
