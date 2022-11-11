@@ -51,6 +51,24 @@ nav {
 
 nav img {
     width: 200px;
+    cursor: pointer;
+}
+
+.fa-arrow-left {
+    color: var(--LPwhite);
+    height: 100%;
+    width: 70px;
+    transition: 0.2s;
+}
+
+.fa-arrow-left:hover {
+    color: var(--LPred);
+}
+
+header h2 {
+    color: var(--LPwhite);
+    height: 1rem;
+    margin-left: 10px;
 }
 
 .nav-links {
@@ -647,4 +665,46 @@ footer p {
 
 .icons .fa-brands:hover {
     color: var(--LPred);
+}
+
+/*-------------------- Instructor Page CSS  ---------------------*/
+.instructors-page {
+    min-height: 100vh;
+    background-color: black;
+}
+
+.instructors-page h1 {
+    color: var(--LPwhite);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.instructor-bio {
+    width: 100%;
+    background-color: grey;
+    min-height: 200px;
+}
+
+.bio-photo {
+    max-width: 20%;
+    display: inline-block; 
+    margin: 1rem;
+    float: left;
+}
+
+.bio {
+    max-width: 75%;
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 1rem;
+    float: right;
+}
+
+.bio h2 {
+    margin: 10px;
+    text-align: center;
+}
+
+.bio p {
+    padding-right: 3%;
 }
