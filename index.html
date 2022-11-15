@@ -62,7 +62,7 @@
                     </h1>
                 </div>
                 <div class="signup-form" >
-                    <h2>SIGN UP FOR LESSONS TODAY!</h2>
+                    <h2>SIGN UP TODAY!</h2>
                     <!-- to-do check that form handler works -->
                     <form action="form-handler.php" method="post">
                         <input type='text' id="name" name='name' placeholder='Name' required>
@@ -85,7 +85,7 @@
         <!-- Music Lessons Page -->
         <section class="music-lessons-page" id="musicLessonsPage">
             <div class="content">
-                <h2>Our Programs</h2>
+                <h2>OUR <span class="red">PROGRAMS</span></h2>
                 <div class="music-lessons-card">
                     <!-- to-do determine if we want to put this information on another page -->
                     <h3 class="card-title">Music Lessons</h3>
@@ -123,11 +123,11 @@
         <!-- About Page -->
         <section class="about-page" id="aboutPage">
             <div class="content">
-                <h2>About Us</h2>
+                <h2>ABOUT <span CLASS="red">US</span></h2>
                 <div class="our-story-card"> 
                     <img src="images/ryan-building.png">
                     <div class="our-story-info">
-                        <h3>Our Story</h3>
+                        <h3>OUR STORY</h3>
                         <p>The West Side finally has a creative and collaborative space for learning and creating music. Located in Downtown Plainfield, The Launch Pad has become a destination for artists in Avon, Brownsburg, Danville, Mooresville, Camby, Monrovia, Clayton, Wayne Township and all of Greater Indianapolis. We offer private music lessons on guitar, bass guitar, drums, piano, voice and recording arts. We are the only place you can find “Rock Band”, and we have one of the best recording studios in Indianapolis. Whether you want to learn the basics, take your talent to the next level, or hit the recording studio, contact us today and find your voice!</p>
                         <br>
                         <p>We have top-notch instructors and a killer space for artists. The Launch Pad features 5 unique music lesson rooms, a full-service recording studio, and an open rehearsal space for group lessons, clinics, and our Rock Band rehearsals. We can even host your next birthday party or come to your location for clinics and recording sessions.</p>
@@ -138,7 +138,7 @@
                 <div class="our-instructors-card">
                     <img src="images/ryan1.jpeg">
                     <div class="our-instructors-info">
-                        <h3>Our Instructors</h3>
+                        <h3>OUR INSTRUCTORS</h3>
                         <p>At The Launch Pad, our instructors are incredibly talented, enthusiastic, and professional. With multiple years experience on stage, in the studio, and in the lesson room, we are ready and well-equipped to help you find your voice! Click <a class='instructor-link' href="instructors.html" target="_blank">HERE</a> to learn more about our instructors.</p>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
         <!-- Events Page -->
         <section class="events-page" id="eventsPage">
             <div class="content">
-                <h2>Check Us Out at Our Events!</h2>
+                <h2>Check Us Out at Our <span class="red">EVENTS</span>!</h2>
                 <div class='sk-fb-event' data-embed-id='99727'></div><script src='https://widgets.sociablekit.com/facebook-page-events/widget.js' async defer></script>
             </div>
         </section>
@@ -159,18 +159,18 @@
                 <h4>Sign up to receive our monthly newsletter, as well as updates on closures and news updates</h4>
          
                 <!-- to-do make sure the email signup form works, where we will have to manually add the email to Sender (which is the current software we are going to use to send out HTML emails) -->
-                    <form action='newsletter-signup.php' method='post'>
-                        <input type='email' name='email' placeholder='Email' required>
-                        <button type='submit' class='newsletter-btn'>Sign Up</button>   
-                    </form>   
-                
+                <!-- to-do add "message sent" with JS, should be the same as the earlier form -->
+                <form action='newsletter-signup.php' method='post'>
+                    <input type='email' name='email' placeholder='Email' required>
+                    <button type='submit' class='newsletter-btn'>Sign Up</button>   
+                </form>     
             </div>
         </section>
 
         <!-- FAQ page -->
         <section class="faq-page" id="faqPage">
             <div class="content">
-                <h2>Frequently Asked <span style="color: var(--LPred)">Questions</span></h2>
+                <h2>FREQUENTLY ASKED <span style="color: var(--LPred)">QUESTIONS</span></h2>
                 <ul>
                     <li>
                         <!-- to-do update the questions as needed -->
@@ -272,20 +272,6 @@
         <br>
         <p>©2012 <strong>Launch Pad Music, LLC</strong> All rights reserved</p>
     </footer>
-    <!-- javascript to animate the menu on mobile -->
-    <script>
-
-        var navLinks = document.getElementById('navLinks');
-    
-        function showMenu(){
-          navLinks.style.right = '0';
-        }
-    
-        function hideMenu(){
-          navLinks.style.right = '-200px'
-        }
-    
-      </script>
-      <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

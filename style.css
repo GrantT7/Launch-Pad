@@ -144,7 +144,7 @@ nav .fa {
 }
 
 
-/* Welcome Page CSS */
+/*------------------ Welcome Page CSS ---------------------*/
 .welcome-page {
     min-height: 100vh;
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/rock-band1.jpeg);
@@ -284,7 +284,7 @@ nav .fa {
         margin-top: 5vh;
     }
 }
-/* Music Lessons Page CSS */
+/*----------------- Music Lessons Page CSS -----------------------*/
 .music-lessons-page {
     min-height: 800px;
     background-color: var(--LPblack);
@@ -295,6 +295,10 @@ nav .fa {
     width: 100%;
     text-align: center;
     margin-top: 20px;
+    color: var(--LPwhite);
+}
+
+.red {
     color: var(--LPred);
 }
 
@@ -364,7 +368,7 @@ nav .fa {
     }
 }
 
-/* About Page CSS */
+/*----------------------- About Page CSS -------------------------*/
 .about-page {
     min-height: 800px;
     background-color: var(--LPwhite);
@@ -384,7 +388,7 @@ nav .fa {
 
 .our-story-card img {
     display: inline-block;
-    margin: 1rem auto;
+    margin: auto;
     max-width: 35%;
     float: left;
 }
@@ -412,7 +416,7 @@ nav .fa {
 
 .our-instructors-card img {
     display: inline-block;
-    margin: 1rem auto;
+    margin: auto;
     width: 35%;
     float: left;
 }
@@ -454,7 +458,7 @@ nav .fa {
 }
 
 
-/* events page CSS */
+/*--------------------- events page CSS ------------------------*/
 .events-page {
     min-height: 500px;
     background-color: var(--LPblack);
@@ -468,10 +472,10 @@ nav .fa {
 .sk-fb-event {
     width: 100%;
     min-height: 500px;
-    border: 5px solid var(--LPred);
+    border: 1rem solid var(--LPred);
 }
 
-/* newsletter CSS */
+/*------------------ newsletter CSS ---------------------*/
 .newsletter-signup {
     min-height: 30vh;
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/rock-band3.jpeg);
@@ -535,7 +539,7 @@ nav .fa {
     } 
 }
 
-/* FAQ page CSS */
+/*------------------- FAQ page CSS -----------------------*/
 .faq-page {
     background-color: var(--LPblack);
 
@@ -581,7 +585,7 @@ nav .fa {
    }
 }
 
-/* Contact Page CSS */
+/*----------------------- Contact Page CSS -------------------------*/
 .contact-page {
     min-height: 500px;
     background-color: var(--LPblack);
@@ -644,7 +648,7 @@ nav .fa {
 
 }
 
-/* Footer CSS */
+/*--------------------- Footer CSS ----------------------*/
 footer {
     width: 100%;
     text-align: center;
@@ -723,13 +727,13 @@ footer p {
 
 .bio-photo {
     min-width: 150px;
-    width: 20%;
+    width: 30%;
     height: auto;
     margin: 1rem;
 }
 
 .bio {
-    max-width: 73%;
+    max-width: 65%;
     margin: 1rem auto;
     padding: 1rem;
     float: right;
@@ -744,7 +748,7 @@ footer p {
     padding-right: 3%;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 700px) {
     .bio-photo {
         margin: 0;
         margin-bottom: 10px;

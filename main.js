@@ -1,3 +1,15 @@
+// Shows and hides the nav links on mobile
+const navLinks = document.getElementById('navLinks');
+    
+function showMenu(){
+  navLinks.style.right = '0';
+}
+    
+function hideMenu(){
+  navLinks.style.right = '-200px'
+}
+
+
 // This section changes the nav bar from a transparent background to a black background
 
 const header = document.querySelector("header");
