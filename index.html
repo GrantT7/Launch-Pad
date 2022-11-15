@@ -65,14 +65,19 @@
                     <h2>SIGN UP FOR LESSONS TODAY!</h2>
                     <!-- to-do check that form handler works -->
                     <form action="form-handler.php" method="post">
-                        <input type='text' name='name' placeholder='Name' required>
-                        <input type='email' name='email' placeholder='Email' required>
-                        <input type='tel' name='phone' placeholder='Phone Number' required>
-                        <input type='text' name='subject' placeholder='Subject' required>
-                        <textarea rows='8' name='message' placeholder='Enter Your Message' required></textarea>
+                        <input type='text' id="name" name='name' placeholder='Name' required>
+                        <input type='email' id="email" name='email' placeholder='Email' required>
+                        <input type='tel' id="phone" name='phone' placeholder='Phone Number' required>
+                        <input type='text' id="subject" name='subject' placeholder='Subject' required>
+                        <textarea rows='8' id="msg" name='message' placeholder='Enter Your Message' required></textarea>
                         <button type='submit' class='hero-btn'>Send Message</button>
-                      </form>
+                    </form>
                       <!-- to-do when submit is clicked text should pop up saying it was submitted -->
+                      <!-- tutorial link https://www.youtube.com/watch?v=lRrrLCrZDxI -->
+                    <div class="message">
+                        <div class="success" id="success">Your Message Was Sent!</div>
+                        <div class="danger" id="danger">All Fields Must be Filled</div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -217,6 +217,36 @@ nav .fa {
     box-sizing: border-box;
 }
 
+/* message sent success/fail css */
+/* to-do finish styling the alert*/
+.message{
+    width: 100%;
+    height: 0;
+    justify-content: center;
+}
+
+.message .success{
+    font-size: 20px;
+    padding: 1rem;
+    color: green;
+    background-color: var(--LPwhite);
+    /* position: absolute; */
+    text-align: center;
+    animation: buttons .3s linear;
+    display: none;
+}
+.message .danger{
+    font-size: 20px;
+    padding: 1rem;
+    color: var(--LPred);
+    background-color: var(--LPwhite);
+    /* position: absolute; */
+    text-align: center;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+}
+
 .hero-btn {
     width: 100%;
     color: var(--LPwhite);
