@@ -63,3 +63,25 @@ function message(){
   }, 4000);
 
 }
+
+// newsletter signup success/fail message
+function newsletterSignup(){
+  const newsletterEmail = document.getElementById('newsletter-email');
+  const newsletterSuccess = document.getElementById('newsletter-success');
+  const newsletterDanger = document.getElementById('newsletter-danger');
+  if(newsletterEmail.value === ''){
+    newsletterDanger.style.display = 'block';
+} else {
+    setTimeout(() => {
+        newsletterEmail.value = '';
+    }, 2000);
+
+    newsletterSuccess.style.display = 'block';
+}
+
+
+setTimeout(() => {
+    danger.style.display = 'none';
+    success.style.display = 'none';
+}, 4000);
+}

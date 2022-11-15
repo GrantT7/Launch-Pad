@@ -161,9 +161,13 @@
                 <!-- to-do make sure the email signup form works, where we will have to manually add the email to Sender (which is the current software we are going to use to send out HTML emails) -->
                 <!-- to-do add "message sent" with JS, should be the same as the earlier form -->
                 <form action='newsletter-signup.php' method='post'>
-                    <input type='email' name='email' placeholder='Email' required>
+                    <input type='email' id="newsletter-email" name='newsletter-email' placeholder='Email' required>
                     <button type='submit' class='newsletter-btn'>Sign Up</button>   
-                </form>     
+                </form> 
+                <div class="message">
+                    <div class="newsletter-success" id="newsletter-success">Your Message Was Sent!</div>
+                    <div class="newsletter-danger" id="newsletter-danger">Please Enter A Valid Email</div>
+                </div>   
             </div>
         </section>
 

@@ -516,6 +516,34 @@ nav .fa {
     max-width: 400px;
 }
 
+.message{
+    width: 100%;
+    height: 0;
+    justify-content: center;
+}
+
+.message .newsletter-success{
+    font-size: 20px;
+    padding: 1rem;
+    color: green;
+    background-color: var(--LPwhite);
+    /* position: absolute; */
+    text-align: center;
+    animation: buttons .3s linear;
+    display: none;
+}
+.message .newsletter-danger{
+    font-size: 20px;
+    padding: 1rem;
+    color: var(--LPred);
+    background-color: var(--LPwhite);
+    /* position: absolute; */
+    text-align: center;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+}
+
 .newsletter-signup button {
     min-width: 10vw;
     height: 2rem;
