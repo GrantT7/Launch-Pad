@@ -9,6 +9,7 @@
     --LPwhite: white;
     --LPred: rgb(237, 27, 36);
     --LPblack: black;
+    --LPgrey: grey;
 }
 
 
@@ -118,7 +119,7 @@ nav .fa {
     }
     .nav-links{
       position: fixed;
-      background: grey;
+      background: var(--LPgrey);
       height: 100vh;
       width: 200px;
       top: 0;
@@ -211,14 +212,12 @@ nav .fa {
     width: 100%;
     font-size: 14px;
     padding: 15px;
-    /* margin-bottom: 5px; */
     border: none;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid var(--LPgrey);
     box-sizing: border-box;
 }
 
 /* message sent success/fail css */
-/* to-do finish styling the alert*/
 .message{
     width: 100%;
     height: 0;
@@ -286,17 +285,25 @@ nav .fa {
 }
 /*----------------- Music Lessons Page CSS -----------------------*/
 .music-lessons-page {
-    min-height: 800px;
     background-color: var(--LPblack);
 }
 
 .music-lessons-page h2 {
-    display: inline-block;
+    /* display: inline-block;
     width: 100%;
     text-align: center;
     margin-top: 20px;
+    color: var(--LPwhite); */
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
     color: var(--LPwhite);
+    font-size: clamp(15px, 6vh, 100px);
 }
+
+
 
 .red {
     color: var(--LPred);
@@ -307,9 +314,9 @@ nav .fa {
     float: left;
     margin-top: 20px;
     min-height: 1050px;
-    background-color: var(--LPblack);
+    /* background-color: var(--LPgrey); */
     color: var(--LPwhite);
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .card-title {
@@ -336,9 +343,9 @@ nav .fa {
     float: left;
     margin-top: 20px;
     min-height: 1050px;
-    background-color: var(--LPblack);
+    /* background-color: var(--LPgrey); */
     color: var(--LPwhite);
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .rock-band-card img {
@@ -375,7 +382,13 @@ nav .fa {
 }
 
 .about-page h2 {
-    margin: 20px auto;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--LPblack);
+    font-size: clamp(15px, 6vh, 100px);
 }
 
 .our-story-card {
@@ -440,8 +453,15 @@ nav .fa {
 }
 
 @media(max-width: 600px) {
+    .about-page .content {
+        width: 100%;
+        padding: 0;
+    }
     .our-story-card, .our-instructors-card {
         width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
     }
     .our-story-card img {
         max-width: 100%;
@@ -465,14 +485,26 @@ nav .fa {
 }
 
 .events-page h2 {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
     color: var(--LPwhite);
-    margin: 20px auto;
+    font-size: clamp(15px, 6vh, 100px);
 }
 
 .sk-fb-event {
     width: 100%;
     min-height: 500px;
     border: 1rem solid var(--LPred);
+}
+
+@media(max-width: 600px) {
+    .events-page .content {
+        width: 100%;
+        padding: 0;
+    }
 }
 
 /*------------------ newsletter CSS ---------------------*/
@@ -523,7 +555,7 @@ nav .fa {
 }
 
 .message .newsletter-success{
-    font-size: 20px;
+    font-size: 1rem;
     padding: 1rem;
     color: green;
     background-color: var(--LPwhite);
@@ -533,7 +565,9 @@ nav .fa {
     display: none;
 }
 .message .newsletter-danger{
-    font-size: 20px;
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
     padding: 1rem;
     color: var(--LPred);
     background-color: var(--LPwhite);
@@ -619,6 +653,16 @@ nav .fa {
     background-color: var(--LPblack);
 }
 
+.contact-page h2 {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--LPwhite);
+    font-size: clamp(15px, 6vh, 100px);
+}
+
 .info {
     width: 49%;
     min-width: 320px;
@@ -626,7 +670,7 @@ nav .fa {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: grey;
+    background-color: var(--LPgrey);
 }
 
 .info-piece {
@@ -708,7 +752,7 @@ footer h4 {
 }
   
 footer p {
-    color: grey;
+    color: var(--LPgrey);
 }
 
 .icons .fa {
@@ -737,7 +781,7 @@ footer p {
 
 /*-------------------- Instructor Page CSS  ---------------------*/
 .instructors-page {
-    background-color: black;
+    background-color: var(--LPblack);
 }
 
 .instructors-page h1 {
@@ -748,7 +792,7 @@ footer p {
 
 .instructor-bio {
     width: 100%;
-    background-color: grey;
+    background-color: var(--LPgrey);
     min-height: 300px;
     margin-bottom: 10px;
 }
