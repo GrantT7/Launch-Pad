@@ -196,6 +196,7 @@ nav .fa {
 }
 
 .signup-form {
+    /* border: .5rem solid var(--LPred); */
     margin-top: 200px;
     width: 33%;
     background-color: var(--LPwhite);
@@ -310,13 +311,20 @@ nav .fa {
 }
 
 .music-lessons-card {
-    width: 48%;
+    /* the commented styles are from a previous version, can be deleted when new style is implemented */
+    /* width: 48%;
     float: left;
     margin-top: 20px;
     min-height: 1050px;
     /* background-color: var(--LPgrey); */
-    color: var(--LPwhite);
+    /* color: var(--LPwhite);
+    padding: 1rem; */
     padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100px;
+    color: var(--LPwhite);
+    background-color: var(--LPblack);
 }
 
 .card-title {
@@ -327,9 +335,17 @@ nav .fa {
 }
 
 .music-lessons-card img {
-    width: 100%;
-    height: auto;
-    margin: 10px auto;
+    display: inline-block;
+    margin: auto;
+    max-width: 35%;
+    float: left;
+}
+
+.music-lessons-info {
+    max-width: 64%;
+    display: inline-block;
+    float: right;
+    padding: 1rem; 
 }
 
 .music-lessons-card a {
@@ -339,19 +355,29 @@ nav .fa {
 }
 
 .rock-band-card {
-    width: 48%;
-    float: left;
-    margin-top: 20px;
-    min-height: 1050px;
-    /* background-color: var(--LPgrey); */
-    color: var(--LPwhite);
     padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100px;
+    color: var(--LPwhite);
+    background-color: var(--LPblack);
 }
 
 .rock-band-card img {
-    width: 100%;
+    /* width: 100%;
     height: auto;
-    margin: 10px auto;
+    margin: 10px auto; */
+    display: inline-block;
+    margin: auto;
+    max-width: 35%;
+    float: left;
+}
+
+.rock-band-info {
+    max-width: 64%;
+    display: inline-block;
+    float: right;
+    padding: 1rem;
 }
 
 .rock-band-card a {
@@ -362,16 +388,28 @@ nav .fa {
 
 /* to-do determine a good width to prevent the rock band card from pushing down in a ~600px viewport */
 @media(max-width: 600px) {
-    .music-lessons-card {
+    .muasic-lessons-page .content {
         width: 100%;
-        padding: 0px;
-        min-height: 100vh;
-    } 
-    .rock-band-card {
+        padding: 0;
+    }
+    .music-lessons-card, .rock-band-card {
         width: 100%;
-        padding: 0px;
-        margin-top: 20px;
-        min-height: 100vh;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .music-lessons-card img {
+        max-width: 100%;
+        display: block;
+    }
+    .rock-band-card img {
+        max-width: 100%;
+        display: block;
+    }
+    .music-lessons-info, .rock-band-info {
+        max-width: 100%;
+        display: block;
+        padding: 0;
     }
 }
 
@@ -829,5 +867,22 @@ footer p {
     }
     .bio {
         min-width: 100%;
+    }
+}
+
+/*---------------------- Lesson Policy CSS  -----------------------*/
+.lesson-policy {
+    width: 60%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.lesson-policy img {
+    width: 100%;
+}
+
+@media(max-width: 600px) {
+    .lesson-policy {
+        width: 100%;
     }
 }
