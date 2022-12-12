@@ -274,7 +274,9 @@ nav .fa {
     }
     .welcome-text {
         width: 100%;
-        margin: 100 auto;
+        /* margin: 10 auto; */
+        margin-top: 80px;
+        text-align: center;
     }
 
     .signup-form {
@@ -290,11 +292,6 @@ nav .fa {
 }
 
 .music-lessons-page h2 {
-    /* display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    color: var(--LPwhite); */
     display: block;
     width: 100%;
     margin-top: 20px;
@@ -311,15 +308,7 @@ nav .fa {
 }
 
 .music-lessons-card {
-    /* the commented styles are from a previous version, can be deleted when new style is implemented */
-    /* width: 48%;
-    float: left;
-    margin-top: 20px;
-    min-height: 1050px;
-    /* background-color: var(--LPgrey); */
-    /* color: var(--LPwhite);
-    padding: 1rem; */
-    padding: 1rem;
+    padding: .5rem;
     margin: 0 auto;
     width: 100%;
     min-height: 100px;
@@ -355,7 +344,7 @@ nav .fa {
 }
 
 .rock-band-card {
-    padding: 1rem;
+    padding: .5rem;
     margin: 0 auto;
     width: 100%;
     min-height: 100px;
@@ -364,9 +353,6 @@ nav .fa {
 }
 
 .rock-band-card img {
-    /* width: 100%;
-    height: auto;
-    margin: 10px auto; */
     display: inline-block;
     margin: auto;
     max-width: 35%;
@@ -397,6 +383,9 @@ nav .fa {
         margin-top: 0;
         margin-bottom: 0;
         padding: 0;
+    }
+    .music-lessons-page h3 {
+        margin-top: .5rem;
     }
     .music-lessons-card img {
         max-width: 100%;
@@ -430,8 +419,8 @@ nav .fa {
 }
 
 .our-story-card {
-    padding: 1rem;
-    margin: 0 auto;
+    padding: .5rem;
+    margin: auto;
     width: 100%;
     min-height: 100px;
     background-color: var(--LPred);
@@ -439,7 +428,7 @@ nav .fa {
 
 .our-story-card img {
     display: inline-block;
-    margin: auto;
+    margin: 0 auto;
     max-width: 35%;
     float: left;
 }
@@ -457,8 +446,8 @@ nav .fa {
 }
 
 .our-instructors-card {
-    padding: 1rem;
-    margin: 10px auto;
+    padding: .5rem;
+    margin: auto;
     width: 100%;
     min-height: 100px;
     background-color: var(--LPred);
@@ -535,7 +524,7 @@ nav .fa {
 .sk-fb-event {
     width: 100%;
     min-height: 500px;
-    border: 1rem solid var(--LPred);
+    border: .5rem solid var(--LPred);
 }
 
 @media(max-width: 600px) {
