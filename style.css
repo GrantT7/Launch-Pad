@@ -190,7 +190,7 @@ nav .fa {
 
 .big-red {
     color: var(--LPred);
-    font-size: clamp(70px, 10vw, 300px);
+    font-size: clamp(70px, 12vw, 400px);
     font-weight: 900;
     line-height: 0.75;
 }
