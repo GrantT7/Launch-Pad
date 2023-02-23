@@ -65,7 +65,7 @@
                 </div>
                 <div class="signup-form" >
                     <h2>SIGN UP TODAY!</h2>
-                    <!-- to-do check that form handler works -->
+                    <!-- Form Submission 1.0 uses a php file to send a message -->
                     <!-- <form action="form-handler.php" method="post">
                         <input type='text' id="name" name='name' placeholder='Name' required>
                         <input type='email' id="email" name='email' placeholder='Email' required>
@@ -83,8 +83,7 @@
                         <input type='text' id="subject" name='subject' placeholder='Subject' required>
                         <textarea rows='8' id="msg" name='message' placeholder='Enter Your Message' required></textarea>
                         <button type='submit' class='hero-btn'>Send Message</button>
-                   </form>
-                      <!-- to-do when submit is clicked text should pop up saying it was submitted -->
+                   </form> 
                       <!-- tutorial link https://www.youtube.com/watch?v=lRrrLCrZDxI -->
                     <div class="message">
                         <div class="success" id="success">Your Message Was Sent!</div>
@@ -167,7 +166,7 @@
                 <div class='sk-fb-event' data-embed-id='99727'></div><script src='https://widgets.sociablekit.com/facebook-page-events/widget.js' async defer></script>
             </div>
         </section>
-        <!-- newsletter signup, intentionally doesn't have a nav link -->
+        <!-- Newsletter Signup-->
         <section class="newsletter-signup">
             <div class="content">
                 <h2>Sign Up For Our Newsletter!</h2>
@@ -175,10 +174,17 @@
          
                 <!-- to-do make sure the email signup form works, where we will have to manually add the email to Sender (which is the current software we are going to use to send out HTML emails) -->
                 
-                <form action='newsletter-signup.php' method='post'>
+                <!-- Newsletter Signup 1.0 uses PHP -->
+                <!-- <form action='newsletter-signup.php' method='post'>
                     <input type='email' id="newsletter-email" name='newsletter-email' placeholder='Email' required>
                     <button type='submit' class='newsletter-btn'>Sign Up</button>   
-                </form> 
+                </form>  -->
+
+                <!-- Newsletter Signup 2.0 -->
+                <form action="https://formsubmit.co/grant@launchpadindy.com" method="POST">
+                    <input type='email' id="newsletter-email" name='newsletter-email' placeholder='Email' required>
+                    <button type='submit' class='newsletter-btn'>Sign Up</button>
+               </form>
                 <div class="message">
                     <div class="newsletter-success" id="newsletter-success">Your Message Was Sent!</div>
                     <div class="newsletter-danger" id="newsletter-danger">Please Enter A Valid Email</div>
@@ -225,7 +231,7 @@
                         <span class="question">What is Rock Band?</span>
                         <br><br>
                         <!-- to-do add a link to the rock band page on the word HERE -->
-                        <span class="answer">Rock band is our unique program, designed to give kids/youth the full band experience. They rehearse weekly and perform regularly. Learn more <a href="">HERE</a></span> 
+                        <span class="answer">Rock band is our unique program, designed to give kids/youth the full band experience. They rehearse weekly and perform regularly. <!-- Learn more <a href="">HERE</a></span> -->
                     </li>
                     <li>
                         <span class="question">What instruments / disciplines do you teach?</span>
