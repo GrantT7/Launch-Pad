@@ -319,6 +319,7 @@ nav .fa {
 .card-title {
     width: 100%;
     text-align: center;
+    font-size: 1.5rem;
     color: var(--LPwhite);
     margin-bottom: 1rem;
 }
@@ -335,6 +336,10 @@ nav .fa {
     display: inline-block;
     float: right;
     padding: 1rem; 
+}
+
+.music-lessons-info p {
+    font-size: 1.25rem;
 }
 
 .music-lessons-card a {
@@ -364,6 +369,10 @@ nav .fa {
     display: inline-block;
     float: right;
     padding: 1rem;
+}
+
+.rock-band-info p {
+    font-size: 1.25rem;
 }
 
 .rock-band-card a {
@@ -440,9 +449,14 @@ nav .fa {
     padding: 1rem;
 }
 
+.our-story-info p {
+    font-size: 1.25rem;
+}
+
 .our-story-info h3 {
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .our-instructors-card {
@@ -468,9 +482,14 @@ nav .fa {
     padding: 1rem;
 }
 
+.our-instructors-info p {
+    font-size: 1.25rem;
+}
+
 .our-instructors-info h3 {
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .instructor-link {
