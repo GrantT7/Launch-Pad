@@ -65,16 +65,6 @@
                 </div>
                 <div class="signup-form" >
                     <h2>SIGN UP TODAY!</h2>
-                    <!-- Form Submission 1.0 uses a php file to send a message -->
-                    <!-- <form action="form-handler.php" method="post">
-                        <input type='text' id="name" name='name' placeholder='Name' required>
-                        <input type='email' id="email" name='email' placeholder='Email' required>
-                        <input type='tel' id="phone" name='phone' placeholder='Phone Number' required>
-                        <input type='text' id="subject" name='subject' placeholder='Subject' required>
-                        <textarea rows='8' id="msg" name='message' placeholder='Enter Your Message' required></textarea>
-                        <button type='submit' class='hero-btn'>Send Message</button>
-                    </form> -->
-
                     <!-- Form Submission 2.0 -->
                     <form action="https://formsubmit.co/grant@launchpadindy.com" method="POST">
                         <input type='text' id="name" name='name' placeholder='Name' required>
@@ -83,15 +73,10 @@
                         <input type='text' id="subject" name='subject' placeholder='Subject' required>
                         <textarea rows='8' id="msg" name='message' placeholder='Enter Your Message' required></textarea>
                         <!-- to-do add a thank you page that directs back to the home page -->
+                        <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="https://grantt7.github.io/Launch-Pad/">
                         <button type='submit' class='hero-btn'>Send Message</button>
-                    </form> 
-                    <!-- tutorial link https://www.youtube.com/watch?v=lRrrLCrZDxI -->
-                    <!-- to-do add a We got your message page that links back to the home page -->
-                    <!-- <div class="message">
-                        <div class="success" id="success">Your Message Was Sent!</div>
-                        <div class="danger" id="danger">All Fields Must be Filled</div>
-                    </div> -->
+                    </form>   
                 </div>
             </div>
         </section>
@@ -174,15 +159,6 @@
             <div class="content">
                 <h2>Sign Up For Our Newsletter!</h2>
                 <h4>Sign up to receive our monthly newsletter, as well as updates on closures and news updates</h4>
-         
-                <!-- to-do make sure the email signup form works, where we will have to manually add the email to Sender (which is the current software we are going to use to send out HTML emails) -->
-                
-                <!-- Newsletter Signup 1.0 uses PHP -->
-                <!-- <form action='newsletter-signup.php' method='post'>
-                    <input type='email' id="newsletter-email" name='newsletter-email' placeholder='Email' required>
-                    <button type='submit' class='newsletter-btn'>Sign Up</button>   
-                </form>  -->
-
                 <!-- Newsletter Signup 2.0 -->
                 <form action="https://formsubmit.co/grant@launchpadindy.com" method="POST">
                     <input type='email' id="newsletter-email" name='newsletter-email' placeholder='Email' required>
@@ -190,11 +166,6 @@
                     <input type="hidden" name="_next" value="https://grantt7.github.io/Launch-Pad/">
                     <button type='submit' class='newsletter-btn'>Sign Up</button>
                 </form>
-                <!-- to-do add a We got your message page that links back to the home page -->
-                <!-- <div class="message">
-                    <div class="newsletter-success" id="newsletter-success">Your Message Was Sent!</div>
-                    <div class="newsletter-danger" id="newsletter-danger">Please Enter A Valid Email</div>
-                </div>    -->
             </div>
         </section>
 
@@ -236,7 +207,7 @@
                     <li>
                         <span class="question">What is Rock Band?</span>
                         <br><br>
-                        <!-- to-do add a link to the rock band page on the word HERE -->
+                        <!-- to-do add a link to the potential rock band page on the word HERE -->
                         <span class="answer">Rock band is our unique program, designed to give kids/youth the full band experience. They rehearse weekly and perform regularly. <!-- Learn more <a href="">HERE</a></span> -->
                     </li>
                     <li>
