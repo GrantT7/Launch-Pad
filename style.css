@@ -569,7 +569,7 @@ nav .fa {
     display: block;
     width: 100%;
     margin-bottom: 10px;
-    margin-top: 3rem;
+    margin-top: 2rem;
     
 }
 
@@ -646,6 +646,12 @@ nav .fa {
         width: 100%
     } 
 }
+@media(max-width: 750px) {
+    .newsletter-signup {
+        background-image: none;
+        background-color: var(--LPgrey);
+    }
+}
 
 /*------------------- FAQ page CSS -----------------------*/
 .faq-page {
@@ -663,7 +669,7 @@ nav .fa {
 
 .faq-page li {
     margin-bottom: 20px;
-    /* border-bottom: 1px solid red; */
+    text-align: left;
 }
 
 .question {
@@ -766,8 +772,6 @@ nav .fa {
         max-height: 450px;
         min-width: 100%;
     }
-
-
 }
 
 /*--------------------- Footer CSS ----------------------*/
