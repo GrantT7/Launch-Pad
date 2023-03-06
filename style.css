@@ -199,6 +199,7 @@ nav .fa {
     /* border: .5rem solid var(--LPred); */
     margin-top: 200px;
     width: 33%;
+    min-width: 350px;
     background-color: var(--LPwhite);
     min-height: 200px;
     float: right;
@@ -301,8 +302,6 @@ nav .fa {
     font-size: clamp(15px, 6vh, 100px);
 }
 
-
-
 .red {
     color: var(--LPred);
 }
@@ -325,7 +324,7 @@ nav .fa {
 }
 
 .music-lessons-card img {
-    display: inline-block;
+    display: block;
     margin: auto;
     max-width: 35%;
     float: left;
@@ -333,9 +332,10 @@ nav .fa {
 
 .music-lessons-info {
     max-width: 64%;
-    display: inline-block;
+    display: block;
     float: right;
     padding: 1rem; 
+    text-align: justify;
 }
 
 .music-lessons-info p {
@@ -746,6 +746,10 @@ nav .fa {
     float: left;
 }
 
+.map {
+    min-width: 100%;
+}
+
 @media(max-width: 900px) {
     .info {
         height: 450px;
@@ -760,7 +764,7 @@ nav .fa {
 
     .map {
         max-height: 450px;
-        width: 100%;
+        min-width: 100%;
     }
 
 
