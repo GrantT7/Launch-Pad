@@ -736,7 +736,13 @@ nav .fa {
     color: var(--LPred);
 }
 
-.info-piece h5{
+.info-piece h5 {
+    color: var(--LPwhite);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.info-piece h5 a{
     color: var(--LPwhite);
     font-size: 1.3rem;
     text-decoration: none;
@@ -849,19 +855,18 @@ footer p {
     background-color: var(--LPgrey);
     min-height: 300px;
     margin-bottom: 10px;
+    padding: .5rem;
 }
 
 .bio-photo {
     min-width: 150px;
     width: 30%;
     height: auto;
-    margin: 1rem;
 }
 
 .bio {
-    max-width: 65%;
-    margin: 1rem auto;
-    padding: 1rem;
+    max-width: 68%;
+    margin: 0 auto;
     float: right;
 }
 
