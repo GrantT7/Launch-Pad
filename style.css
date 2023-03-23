@@ -219,35 +219,6 @@ nav .fa {
     box-sizing: border-box;
 }
 
-/* message sent success/fail css */
-/* .message{
-    width: 100%;
-    height: 0;
-    justify-content: center;
-}
-
-.message .success{
-    font-size: 20px;
-    padding: 1rem;
-    color: green;
-    background-color: var(--LPwhite);
-    position: absolute;
-    text-align: center;
-    animation: buttons .3s linear;
-    display: none;
-}
-.message .danger{
-    font-size: 20px;
-    padding: 1rem;
-    color: var(--LPred);
-    background-color: var(--LPwhite);
-    position: absolute;
-    text-align: center;
-    transition: .3s;
-    animation: buttons .3s linear;
-    display: none;
-} */
-
 .hero-btn {
     width: 100%;
     color: var(--LPwhite);
@@ -258,9 +229,6 @@ nav .fa {
     background-color: var(--LPred);
     cursor: pointer;
 }
-
-
-
 
 @media(max-width: 900px) {
     .content {
@@ -319,7 +287,7 @@ nav .fa {
     width: 100%;
     text-align: center;
     font-size: 1.5rem;
-    color: var(--LPwhite);
+    color: var(--LPred);
     margin-bottom: 1rem;
 }
 
@@ -343,7 +311,7 @@ nav .fa {
 }
 
 .music-lessons-card a {
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--LPred);
     font-weight: 900;
 }
@@ -358,16 +326,16 @@ nav .fa {
 }
 
 .rock-band-card img {
-    display: inline-block;
+    display: block;
     margin: auto;
     max-width: 35%;
-    float: left;
+    float: right;
 }
 
 .rock-band-info {
     max-width: 64%;
-    display: inline-block;
-    float: right;
+    display: block;
+    float: left;
     padding: 1rem;
 }
 
@@ -417,6 +385,10 @@ nav .fa {
     background-color: var(--LPwhite);
 }
 
+.about-page a {
+    text-decoration: none;
+}
+
 .about-page h2 {
     display: block;
     width: 100%;
@@ -429,7 +401,7 @@ nav .fa {
 
 .our-story-card {
     padding: .5rem;
-    margin: auto;
+    margin: 0 auto;
     width: 100%;
     min-height: 100px;
     background-color: var(--LPred);
@@ -461,7 +433,7 @@ nav .fa {
 
 .our-instructors-card {
     padding: .5rem;
-    margin: auto;
+    margin: 0 auto;
     width: 100%;
     min-height: 100px;
     background-color: var(--LPred);
@@ -701,7 +673,7 @@ nav .fa {
 
 /*----------------------- Contact Page CSS -------------------------*/
 .contact-page {
-    min-height: 500px;
+    min-height: 600px;
     background-color: var(--LPblack);
 }
 
@@ -716,12 +688,12 @@ nav .fa {
 }
 
 .info {
-    width: 49%;
-    min-width: 320px;
+    width: 32%;
+    /* min-width: 320px; */
     min-height: 450px;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    float: left;
     background-color: var(--LPgrey);
 }
 
@@ -738,13 +710,13 @@ nav .fa {
 
 .info-piece h5 {
     color: var(--LPwhite);
-    font-size: 1.3rem;
+    font-size: clamp(.85rem, 5vw, 1.2rem);
     text-decoration: none;
 }
 
 .info-piece h5 a{
     color: var(--LPwhite);
-    font-size: 1.3rem;
+    font-size: clamp(.85rem, 5vw, 1.2rem);
     text-decoration: none;
 }
 
@@ -753,13 +725,35 @@ nav .fa {
 }
 
 .location {
-    display: flex;
-    width: 49%;
+    display: block;
+    width: 31%;
+    float: right;
+}
+.signup-form-bottom {
+    display: block;
+    width: 31%;
+    /* min-width: 350px; */
+    background-color: var(--LPwhite);
+    min-height: 200px;
+    height: 450px;
     float: left;
 }
+.signup-form-bottom h3 {
+    color: var(--LPred);
+    text-align: center;
+    margin: 8px 0;
+}
 
+.signup-form-bottom input, .signup-form-bottom textarea {
+    width: 100%;
+    font-size: 14px;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid var(--LPgrey);
+    box-sizing: border-box;
+}
 .map {
-    min-width: 100%;
+    max-width: 100%;
 }
 
 @media(max-width: 900px) {
@@ -773,10 +767,13 @@ nav .fa {
         width: 100%;
         margin: 10px auto;
     }
-
     .map {
         max-height: 450px;
         min-width: 100%;
+    }
+    .signup-form-bottom {
+        width: 100%;
+        margin: 10px auto;
     }
 }
 
@@ -795,6 +792,7 @@ footer {
     color: var(--LPwhite);
     padding: 10px 50px;
     margin: 2rem;
+    margin-top: 3rem;
     background-color: var(--LPred);
     border: 1px solid var(--LPred);
     transition: 250ms;
