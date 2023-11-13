@@ -444,13 +444,13 @@ nav .fa {
     display: inline-block;
     margin: auto;
     width: 35%;
-    float: left;
+    float: right;
 }
 
 .our-instructors-info {
     max-width: 65%;
     display: inline-block;
-    float: right;
+    float: left;
     padding: 1rem;
 }
 
